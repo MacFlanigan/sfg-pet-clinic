@@ -19,7 +19,7 @@ jobs:
 
       - run: mvn dependency:go-offline
       - save_cache:
-          path:
+          paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
